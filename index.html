@@ -4,15 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Profile</title>
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/styles.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <div class="account-wrapper">
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+      <div class="container site-header-container">
+        <span class="account-settings">Account settings</span>
+        <span class="close">
+          <img class="close-img" src="img/close.svg" alt="close icon" width="24" height="24">
+        </span>
+      </div>
+    </header>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+
+    <!-- MAIN-CONTENT -->
+    <main class="main-content">
+      <form class="account-form" action="https://echo.htmlacademy.ru" method="POST">
+        <img class="account-form-img" src="img/person.jpg" alt="a man picture" width="56" height="56">
+        <div class="account-form-fields">
+          <!-- ACCOUNT-LABEL -->
+          <label class="account-form-label" for="UserName">username
+            <input class="account-form-input" id="UserName" type="text" name="username" placeholder="Enter your username" required>
+          </label>
+
+          <!-- ACCOUNT-FORM-INPUTS -->
+          <div class="account-form-inputs">
+            <!-- ACCOUNT-LABEL -->
+            <label class="account-form-label" for="FirstName">first name
+              <input class="account-form-input" id="FirstName" type="text" name="firstname" placeholder="Enter your first name" required>
+
+              <!-- ACCOUNT-LABEL -->
+              <label class="account-form-label" for="LastName">last name
+                <input class="account-form-input" id="LastName" type="text" name="lastname" placeholder="Enter your last name" required>
+              </label>
+            </div>
+          </div>
+
+          <!-- ACCOUNT-LABEL -->
+          <label class="account-form-label" for="email">email
+            <input class="account-form-input" id="email" type="email" name="email" placeholder="Enter your email" required>
+          </label>
+
+          <!-- ACCOUNT-LABEL -->
+          <label class="account-form-label" for="bio">bio
+            <textarea class="account-form-textarea" name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
+          </label>
+
+        </form>
+      </main>
+
+
+      <!-- SITE-FOOTER -->
+      <footer class="site-footer">
+        <div class="container site-footer-container">
+          <button class="button" type="button">cancel</button>
+          <button class="button" type="submit">save</button>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>

@@ -1,3 +1,40 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --body-bg: #303131;
+  --account-bg: #ffec4f;
+  --text-color: #aeaaa6;
+  --close: #81722d;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +54,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 img {
@@ -32,9 +69,7 @@ img {
 /* CONTAINER  */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 325px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,5 +77,96 @@ img {
 
 /* MAIN-CONTENT */
 .main-content {
-flex-grow: 1;
+  flex-grow: 1;
+  padding-bottom: 30px;
 }
+
+.account-wrapper {
+  max-width: 425px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left:  auto;
+  padding: 50px 50px 30px;
+  background-color: var(--account-bg);
+}
+
+/* SITE-HEADER */
+.site-header {
+  margin-bottom: 50px;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-settings {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.close {
+  display: flex;
+}
+
+.close-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+/* MAIN-CONTENT-BEGIN */
+.account-form {
+
+}
+
+.account-form-img {
+  border-radius: 50%;
+}
+
+.account-form-fields {
+
+}
+
+.account-form-label {
+
+}
+
+.account-form-input {
+
+}
+
+.account-form-inputs {
+
+}
+
+.account-form-textarea {
+
+}
+/* MAIN-CONTENT-END */
+
+
+/* SITE-FOOTER-BEGIN */
+.site-footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button:first-child {
+  margin-right: 40px;
+}
+
+.button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #6e6641;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+/* SITE-FOOTER-END */
