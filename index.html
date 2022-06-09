@@ -12,65 +12,72 @@
 </head>
 <body>
 
-  <div class="account-wrapper">
-    <!-- SITE-HEADER -->
-    <header class="site-header">
-      <div class="container site-header-container">
-        <span class="account-settings">Account settings</span>
-        <span class="close">
-          <img class="close-img" src="img/close.svg" alt="close icon" width="24" height="24">
-        </span>
-      </div>
-    </header>
+  <main class="main-content">
+    <div class="container">
+      <div class="profile-settings">
+        <form class="profile-settings-form" action="https://echo.htmlacademy.ru">
 
+          <!-- PROFILE-SETTINGS-HEADER-BEGIN -->
+          <header class="profile-settings-header">
+            <h1 class="profile-settings-title">account settings</h1>
+            <a class="profile-settings-close-link" href="#">
+              <img class="profile-settings-close-img" src="img/icon-close.svg" alt="Close" width="24" height="24">
+            </a>
+          </header>
+          <!-- PROFILE-SETTINGS-HEADER-END -->
 
-    <!-- MAIN-CONTENT -->
-    <main class="main-content">
-      <form class="account-form" action="https://echo.htmlacademy.ru" method="POST">
-        <img class="account-form-img" src="img/person.jpg" alt="a man picture" width="56" height="56">
-        <div class="account-form-fields">
-          <!-- ACCOUNT-LABEL -->
-          <label class="account-form-label" for="UserName">username
-            <input class="account-form-input" id="UserName" type="text" name="username" placeholder="Enter your username" required>
-          </label>
+          <!-- PROFILE-SETTINGS-FORM-BODY-BEGIN -->
+          <div class="profile-settings-form-body">
+            <img class="profile-settings-avatar" src="img/avatar.jpg" alt="Profile img" width="56" height="56">
 
-          <!-- ACCOUNT-FORM-INPUTS -->
-          <div class="account-form-inputs">
-            <!-- ACCOUNT-LABEL -->
-            <label class="account-form-label" for="FirstName">first name
-              <input class="account-form-input" id="FirstName" type="text" name="firstname" placeholder="Enter your first name" required>
-
-              <!-- ACCOUNT-LABEL -->
-              <label class="account-form-label" for="LastName">last name
-                <input class="account-form-input" id="LastName" type="text" name="lastname" placeholder="Enter your last name" required>
-              </label>
+            <!-- PROFILE-SETTINGS-FORM-GROUP -->
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="settings-user-name-input">username</label>
+              <input class="profile-settings-form-field" type="text" name="user_name" id="settings-user-name-input" placeholder="Enter your username" required>
             </div>
+
+            <!-- PROFILE-SETTINGS-FORM-ROW -->
+            <div class="profile-settings-form-row">
+              <!-- PROFILE-SETTINGS-FORM-GROUP -->
+              <div class="profile-settings-form-group">
+                <label class="profile-settings-form-label" for="settings-first-name-input">first name</label>
+                <input class="profile-settings-form-field" type="text" name="first_name" id="settings-first-name-input" placeholder="Enter your first name" required>
+              </div>
+              <!-- PROFILE-SETTINGS-FORM-GROUP -->
+              <div class="profile-settings-form-group">
+                <label class="profile-settings-form-label" for="settings-last-name-input">last name</label>
+                <input class="profile-settings-form-field" type="text" name="last_name" id="settings-last-name-input" placeholder="Enter your last name" required>
+              </div>
+            </div>
+
+            <!-- PROFILE-SETTINGS-FORM-GROUP -->
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="settings-email-input">email</label>
+              <input class="profile-settings-form-field" type="email" name="email" id="settings-email-input" placeholder="Enter your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+            </div>
+
+            <!-- PROFILE-SETTINGS-FORM-GROUP -->
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="settings-bio-textarea">bio</label>
+              <textarea class="profile-settings-form-field profile-settings-form-field-textarea" name="bio" id="settings-bio-textarea" placeholder="Tell us about yourself" required></textarea>
+            </div>
+
           </div>
+          <!-- PROFILE-SETTINGS-FORM-BODY-END -->
 
-          <!-- ACCOUNT-LABEL -->
-          <label class="account-form-label" for="email">email
-            <input class="account-form-input" id="email" type="email" name="email" placeholder="Enter your email" required>
-          </label>
-
-          <!-- ACCOUNT-LABEL -->
-          <label class="account-form-label" for="bio">bio
-            <textarea class="account-form-textarea" name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
-          </label>
+          <!-- PROFILE-SETTINGS-FORM-ACTIONS-BEGIN -->
+          <footer class="profile-settings-form-actions">
+            <button class="profile-settings-form-action" type="button">cancel</button>
+            <button class="profile-settings-form-action" type="submit">save</button>
+          </footer>
+          <!-- PROFILE-SETTINGS-FORM-ACTIONS-END -->
 
         </form>
-      </main>
-
-
-      <!-- SITE-FOOTER -->
-      <footer class="site-footer">
-        <div class="container site-footer-container">
-          <button class="button" type="button">cancel</button>
-          <button class="button" type="submit">save</button>
-        </div>
-      </footer>
+      </div>
     </div>
+  </main>
 
 
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+  <script src="js/main.js"></script>
+</body>
+</html>
